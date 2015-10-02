@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/functionGroup1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<meta charset="ISO-8859-1">
+<title>Chess game</title>
+</head>
+<body>
+
+	<div class="wrapper">
+		<input type="button" onclick="initiateChessBroad();"
+			value="press here" />
+		<!--  <p id="demo"></p>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		>-->
+		<div class="header-wrapper">
+			<img alt="" src="image/bB.png" class="piece" /> <img alt=""
+				src="image/bK.png" class="piece" /> <img alt="" src="image/bN.png"
+				class="piece" /> <img alt="" src="image/bP.png" class="piece" /> <img
+				alt="" src="image/bQ.png" class="piece" /> <img alt=""
+				src="image/bR.png" class="piece" />
+		</div>
+		<div class="broad-wrapper" onmousemove="setCurrTag(event);"
+			ondrop="drop(event)" ondragover="allowDrop(event)"
+			onmousedown="mouseDown(event)" onmouseup="mouseup(event)"
+			ondblclick="show(event)">
+			<div class="row" id="row-8">
+				<div class="cell white-cell" id="cell-8a"></div>
+				<div class="cell" id="cell-8b"></div>
+				<div class="cell white-cell" id="cell-8c"></div>
+				<div class="cell" id="cell-8d"></div>
+				<div class="cell white-cell" id="cell-8e"></div>
+				<div class="cell" id="cell-8f"></div>
+				<div class="cell white-cell" id="cell-8g"></div>
+				<div class="cell" id="cell-8h"></div>
+			</div>
+			<div class="row" id="row-7">
+				<div class="cell" id="cell-7a"></div>
+				<div class="cell white-cell" id="cell-7b"></div>
+				<div class="cell" id="cell-7c"></div>
+				<div class="cell white-cell" id="cell-7d"></div>
+				<div class="cell" id="cell-7e"></div>
+				<div class="cell white-cell" id="cell-7f"></div>
+				<div class="cell" id="cell-7g"></div>
+				<div class="cell white-cell" id="cell-7h"></div>
+			</div>
+			<div class="row" id="row-6">
+				<div class="cell white-cell" id="cell-6a"></div>
+				<div class="cell" id="cell-6b"></div>
+				<div class="cell white-cell" id="cell-6c"></div>
+				<div class="cell" id="cell-6d"></div>
+				<div class="cell white-cell" id="cell-6e"></div>
+				<div class="cell" id="cell-6f"></div>
+				<div class="cell white-cell" id="cell-6g"></div>
+				<div class="cell" id="cell-6h"></div>
+			</div>
+			<div class="row" id="row-5">
+				<div class="cell" id="cell-5a"></div>
+				<div class="cell white-cell" id="cell-5b"></div>
+				<div class="cell" id="cell-5c"></div>
+				<div class="cell white-cell" id="cell-5d"></div>
+				<div class="cell" id="cell-5e"></div>
+				<div class="cell white-cell" id="cell-5f"></div>
+				<div class="cell" id="cell-5g"></div>
+				<div class="cell white-cell" id="cell-5h"></div>
+			</div>
+			<div class="row" id="row-4">
+				<div class="cell white-cell" id="cell-4a"></div>
+				<div class="cell" id="cell-4b"></div>
+				<div class="cell white-cell" id="cell-4c"></div>
+				<div class="cell" id="cell-4d"></div>
+				<div class="cell white-cell" id="cell-4e"></div>
+				<div class="cell" id="cell-4f"></div>
+				<div class="cell white-cell" id="cell-4g"></div>
+				<div class="cell" id="cell-4h"></div>
+			</div>
+			<div class="row" id="row-3">
+				<div class="cell" id="cell-3a"></div>
+				<div class="cell white-cell" id="cell-3b"></div>
+				<div class="cell" id="cell-3c"></div>
+				<div class="cell white-cell" id="cell-3d"></div>
+				<div class="cell" id="cell-3e"></div>
+				<div class="cell white-cell" id="cell-3f"></div>
+				<div class="cell" id="cell-3g"></div>
+				<div class="cell white-cell" id="cell-3h"></div>
+			</div>
+			<div class="row" id="row-2">
+				<div class="cell white-cell" id="cell-2a"></div>
+				<div class="cell" id="cell-2b"></div>
+				<div class="cell white-cell" id="cell-2c"></div>
+				<div class="cell" id="cell-2d"></div>
+				<div class="cell white-cell" id="cell-2e"></div>
+				<div class="cell" id="cell-2f"></div>
+				<div class="cell white-cell" id="cell-2g"></div>
+				<div class="cell" id="cell-2h"></div>
+			</div>
+			<div class="row" id="row-1">
+				<div class="cell " id="cell-1a"></div>
+				<div class="cell white-cell" id="cell-1b"></div>
+				<div class="cell" id="cell-1c"></div>
+				<div class="cell white-cell" id="cell-1d"></div>
+				<div class="cell" id="cell-1e"></div>
+				<div class="cell white-cell" id="cell-1f"></div>
+				<div class="cell" id="cell-1g"></div>
+				<div class="cell white-cell" id="cell-1h"></div>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<img alt="" src="image/wB.png" class="piece" /> <img alt=""
+				src="image/wK.png" class="piece" /> <img alt="" src="image/wN.png"
+				class="piece" /> <img alt="" src="image/wP.png" class="piece" /> <img
+				alt="" src="image/wQ.png" class="piece" /> <img alt=""
+				src="image/wR.png" class="piece" />
+		</div>
+	</div>
+</body>
+</html>
